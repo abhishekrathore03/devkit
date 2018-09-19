@@ -35,7 +35,7 @@
   },
   "main": "src/devkit.js",
   "scripts": {
-    "postinstall": "scripts/postinstall.bat",
+    "postinstall": "cd scripts && postinstall.bat",
     "test": "mocha --reporter spec --recursive -C ./tests",
     "prepublish": "npm test && gulp publish"
   },
