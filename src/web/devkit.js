@@ -12,7 +12,7 @@ if (!devkit) {
 
 // define public API
 var _simulators = {};
-GLOBAL.devkit = {
+global.devkit = {
   // the constructor for the DevKit API Promise objects
   Promise: Promise,
 

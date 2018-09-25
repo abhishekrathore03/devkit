@@ -93,7 +93,7 @@ var ViewInspectorClient = Class(function () {
 
     this._channel = channel
       .on('setName', bind(this, function (name) {
-        GLOBAL._name = name;
+        global._name = name;
         logging.setPrefix(name + ': ');
       }))
       .on('enableInputListener', bind(this, function (req, res) {
@@ -138,7 +138,7 @@ var ViewInspectorClient = Class(function () {
       .on('highlightView', bind(this._overlay, 'setHighlight'))
       .on('selectView', bind(this._overlay, 'setSelected'))
       .on('getRootUID', bind(this, function (req, res) {
-        if (GLOBAL.GC && GLOBAL.GC.app && GLOBAL.GC.app.uid) {
+        if (global.GC && global.GC.app && global.GC.app.uid) {
           res.send(GC.app.uid);
         } else {
           res.error('no root view');

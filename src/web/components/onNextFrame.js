@@ -14,7 +14,7 @@ module.exports = function (ctx, cb) {
   if (arguments.length == 1) {
     cb = arguments[0];
   } else {
-    cb = bind.apply(GLOBAL, arguments);
+    cb = bind.apply(global, arguments);
   }
 
   reqAnim(cb);

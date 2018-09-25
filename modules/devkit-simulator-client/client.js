@@ -42,7 +42,7 @@ exports.onLaunch = function () {
   });
 
   channel.on('button:back', function (evt) {
-    GLOBAL.NATIVE.onBackButton && GLOBAL.NATIVE.onBackButton(evt);
+    global.NATIVE.onBackButton && global.NATIVE.onBackButton(evt);
   });
 
   channel.on('screenshot', function (data, req) {

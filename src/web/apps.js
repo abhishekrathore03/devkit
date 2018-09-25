@@ -25,7 +25,7 @@ util.ajax.get('/api/home', function (err, homeDirectory) {
   if (err) {
     logger.error(err);
   } else {
-    GLOBAL.overview = new Overview({
+    global.overview = new Overview({
       parent: document.body,
       homeDirectory: homeDirectory.path
     });
