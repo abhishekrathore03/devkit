@@ -8,7 +8,7 @@
   "version": "3.1.4",
   "homepage": "http://github.com/gameclosure/",
   "repository": {
-    "url": "https://github.com/gameclosure/devkit.git"
+    "url": "https://github.com/abhishekrathore03/devkit.git"
   },
   "bin": {
     "devkit": "./src/devkit.js"
